@@ -1,13 +1,18 @@
 .top-bar {
     display: flex;
     align-items: center;
+    justify-content: flex-end; /* 오른쪽 정렬 */
     padding: 10px; /* 필요에 따라 패딩 조정 */
     background-color: #f6f6f6;
-    height: 9px; /* 높이를 50px로 설정 */
+    height: 30px; /* 높이를 50px로 설정 */
+    position: absolute; /* 상단에 고정 */
+    right: 0; /* 오른쪽에 정렬 */
+    top: 0; /* 상단에 정렬 */
+    width: 100%; /* 너비를 100%로 설정하여 전체 너비 차지 */
 }
 
 .top_link a {
-    margin-left: 15px; /* 링크 사이의 간격을 20px로 설정 */
+    margin-left: 15px; /* 링크 사이의 간격을 15px로 설정 */
     text-decoration: none; /* 링크 밑줄 제거 */
     color: #000; /* 링크 색상 설정 */
     font-size: 13px;
@@ -15,19 +20,26 @@
 
 .log-main {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px 0; /* 필요에 따라 패딩 조정 */
+    justify-content: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 40px; /* .top-bar의 높이와 일치하도록 조정 */
 }
 
+/* 로고 스타일 */
+.logo {
+    margin-right: 20px; /* 로고와 타이틀 사이의 간격 조정 */
+}
 
-
+/* 로고 이미지 스타일 */
 .logo img {
-    height: 50px; /* 필요에 따라 로고 크기 조정 */
-    margin-right: 10px; /* 로고와 제목 사이의 간격 조정 */
+    height: 50px;
+    display: block;
 }
 
+/* 타이틀 스타일 */
 .title {
-    font-size: 24px; /* 필요에 따라 글자 크기 조정 */
-    font-weight: bold; /* 필요에 따라 글자 두께 조정 */
+    font-size: 24px;
+    font-weight: bold;
 }

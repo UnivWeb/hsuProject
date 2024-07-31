@@ -1,40 +1,40 @@
 /* 전체 페이지 스타일 */
-body {
+* {
+    padding: 0;
     margin: 0;
-    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
 }
 
 /* Header 스타일 */
 header {
-  
-    padding: 10px 20px; /* 상하 좌우 패딩 설정 */
-    border-bottom: 1px solid #ddd; /* 하단 경계선 추가 */
-    position: relative; /* 기본 위치 설정 */
-    z-index: 1000; /* 다른 요소들 위에 표시 */
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* 네비게이션 바 스타일 */
 nav {
     background-color: #183d93;
-    position: sticky; /* 스크롤 시 상단에 고정되도록 설정 */
-    top: 0; /* 상단에 위치 */
-    z-index: 1000; /* 다른 요소들 위에 표시 */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* 본문 스타일 */
-article {
-    padding: 20px;
-    background-color: #dfe6d1; /* 배경색 설정 */
-    min-height: calc(100vh - 160px); /* 페이지 높이에서 헤더와 푸터 높이 제외 */
-    display: grid; /* CSS 그리드 사용 */
-    place-items: center; /* 아이템을 가운데 정렬 */
-    grid-template-columns: 1fr 1fr; /* 두 개의 동일한 너비 컬럼 */
-    gap: 20px; /* 각 컬럼 사이의 간격 설정 */
-}
+
 
 /* Footer 스타일 */
 footer {
     background-color: #f8f9fa;
     padding: 10px;
-    border-top: 1px solid #ddd; /* 상단 경계선 추가 */
+    border-top: 1px solid #ddd;
 }
