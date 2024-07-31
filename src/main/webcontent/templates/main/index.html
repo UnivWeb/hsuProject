@@ -4,34 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main page</title>
+    <script src="/src/main/webcontent/static/includHTML.js"></script>
     <link href="/src/main/webcontent/static/css/index.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="top_link">
-                <a href="#">메인화면</a>
-                <a href="#">로그인</a>
-                <a href="#">사이트맵</a>
-            </div>
-        </div>
-        <div class="log-main">
-            <div class="logo">
-                <img src="#" alt="협성대학교 로고">
-            </div>
-            <div class="title">
-                호텔관광경영학과
-            </div>
-        </div>
+    <header include-html="/src/main/webcontent/templates/header.html"></header>
+    <nav include-html="/src/main/webcontent/templates/navbar.html"></nav>
+    <article include-html="/src/main/webcontent/templates/main/content.html"></article>
+    <footer include-html="/src/main/webcontent/templates/footer.html"></footer>
 
-        
-    </header>
-   
-  
-
-
-   
-    </div>
-</div>
+ 
 </body>
+<script>
+    includeHTML();
+</script>
 </html>
