@@ -5,13 +5,16 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 10px; /* 항목 간격 추가 */
 }
 
 /* 네비게이션 바 항목 스타일 */
 nav ul li {
     position: relative; /* 하위 메뉴의 위치를 상대적으로 설정 */
+    width: 203px; /* 하위 메뉴 너비에 맞춘 상위 메뉴 너비 설정 */
 }
 
+/* 상위 메뉴 링크 스타일 */
 nav ul li a {
     display: block;
     padding: 15px;
@@ -20,6 +23,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 20px;
     background-color: #183d93; /* 배경색 추가 */
+    transition: background-color 0.3s ease; /* 배경색 전환 효과 추가 */
 }
 
 /* 메뉴 항목에 마우스를 올렸을 때 스타일 */
@@ -32,8 +36,9 @@ nav ul li a:hover {
     display: none; /* 기본적으로 하위 메뉴 숨김 */
     position: absolute; /* 절대 위치 */
     background-color: #183d93; /* 하위 메뉴 배경색 */
-    width: 100%; /* 부모 요소에 맞춰 너비 설정 */
-    left: 0; /* 왼쪽에 위치 */
+    width: 203px; /* 하위 메뉴 너비 고정 */
+    left: 50%; /* 부모 요소의 가운데에 맞춤 */
+    transform: translateX(-50%); /* 가운데 맞춤을 위한 변환 */
     top: 100%; /* 부모 메뉴 아래에 위치 */
     opacity: 0; /* 기본적으로 투명하게 설정 */
     visibility: hidden; /* 기본적으로 숨김 */
@@ -46,4 +51,3 @@ nav ul li a:hover {
     opacity: 1; /* 하위 메뉴 보이기 */
     visibility: visible; /* 하위 메뉴 보이기 */
 }
-

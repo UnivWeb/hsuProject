@@ -1,0 +1,15 @@
+/* content.css */
+#slide-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.bxslider {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.slide-box {
+    display: inline-block;
+    width: 100%;
+}
