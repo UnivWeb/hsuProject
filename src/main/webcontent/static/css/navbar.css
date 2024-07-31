@@ -1,0 +1,49 @@
+/* 네비게이션 바 목록 스타일 */
+nav ul {
+    display: grid; /* CSS 그리드 사용 */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 반응형 컬럼 설정 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 네비게이션 바 항목 스타일 */
+nav ul li {
+    position: relative; /* 하위 메뉴의 위치를 상대적으로 설정 */
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #183d93; /* 배경색 추가 */
+}
+
+/* 메뉴 항목에 마우스를 올렸을 때 스타일 */
+nav ul li a:hover {
+    background-color: #002266;
+}
+
+/* 하위 메뉴 (submenu) 기본 스타일 */
+.nav-menu .submenu {
+    display: none; /* 기본적으로 하위 메뉴 숨김 */
+    position: absolute; /* 절대 위치 */
+    background-color: #183d93; /* 하위 메뉴 배경색 */
+    width: 100%; /* 부모 요소에 맞춰 너비 설정 */
+    left: 0; /* 왼쪽에 위치 */
+    top: 100%; /* 부모 메뉴 아래에 위치 */
+    opacity: 0; /* 기본적으로 투명하게 설정 */
+    visibility: hidden; /* 기본적으로 숨김 */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+/* 하위 메뉴가 표시될 때 스타일 */
+.nav-menu:hover .submenu {
+    display: block; /* 하위 메뉴 표시 */
+    opacity: 1; /* 하위 메뉴 보이기 */
+    visibility: visible; /* 하위 메뉴 보이기 */
+}
+

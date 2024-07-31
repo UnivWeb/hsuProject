@@ -1,34 +1,40 @@
-.top-bar {
-    display: flex;
-    justify-content: flex-end; /* 오른쪽 정렬 */
-    align-items: center;
-    padding: 10px; /* 필요에 따라 패딩 조정 */
-    background-color: #f6f6f6;
-    height: 9px; /* 높이를 50px로 설정 */
+/* 전체 페이지 스타일 */
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-.top_link a {
-    margin-left: 15px; /* 링크 사이의 간격을 20px로 설정 */
-    text-decoration: none; /* 링크 밑줄 제거 */
-    color: #000; /* 링크 색상 설정 */
-    font-size: 13px;
+/* Header 스타일 */
+header {
+  
+    padding: 10px 20px; /* 상하 좌우 패딩 설정 */
+    border-bottom: 1px solid #ddd; /* 하단 경계선 추가 */
+    position: relative; /* 기본 위치 설정 */
+    z-index: 1000; /* 다른 요소들 위에 표시 */
 }
 
-.log-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0; /* 필요에 따라 패딩 조정 */
+/* 네비게이션 바 스타일 */
+nav {
+    background-color: #183d93;
+    position: sticky; /* 스크롤 시 상단에 고정되도록 설정 */
+    top: 0; /* 상단에 위치 */
+    z-index: 1000; /* 다른 요소들 위에 표시 */
 }
 
-
-
-.logo img {
-    height: 50px; /* 필요에 따라 로고 크기 조정 */
-    margin-right: 10px; /* 로고와 제목 사이의 간격 조정 */
+/* 본문 스타일 */
+article {
+    padding: 20px;
+    background-color: #dfe6d1; /* 배경색 설정 */
+    min-height: calc(100vh - 160px); /* 페이지 높이에서 헤더와 푸터 높이 제외 */
+    display: grid; /* CSS 그리드 사용 */
+    place-items: center; /* 아이템을 가운데 정렬 */
+    grid-template-columns: 1fr 1fr; /* 두 개의 동일한 너비 컬럼 */
+    gap: 20px; /* 각 컬럼 사이의 간격 설정 */
 }
 
-.title {
-    font-size: 24px; /* 필요에 따라 글자 크기 조정 */
-    font-weight: bold; /* 필요에 따라 글자 두께 조정 */
+/* Footer 스타일 */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-top: 1px solid #ddd; /* 상단 경계선 추가 */
 }
